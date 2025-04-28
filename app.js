@@ -75,3 +75,8 @@ console.log(game.gyms);
 game.party.splice(0, 1, pokemon[26 - 1]);
 console.log(game.party);
 
+// Exercise 7
+game.party.forEach((partyObj) => {
+    console.log(partyObj.name);
+});
+
