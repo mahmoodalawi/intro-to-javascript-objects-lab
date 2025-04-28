@@ -24,7 +24,11 @@ const game = {
 
   console.dir(pokemon, { maxArrayLength: null })
 
- // Exercise 1
- 
+ // Exercise 2
+
   console.log(game)
+
+ // Exercise 3
+
+  game.difficulty = "Med";
 
