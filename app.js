@@ -75,8 +75,15 @@ console.log(game.gyms);
 game.party.splice(0, 1, pokemon[26 - 1]);
 console.log(game.party);
 
-// Exercise 7
+// Exercise 8
 game.party.forEach((partyObj) => {
     console.log(partyObj.name);
+});
+
+// Exercise 9
+pokemon.forEach((pokemonObj) => {
+    if (pokemonObj.starter === true) {
+        console.log(`${pokemonObj.name} is a starter`);
+    }
 });
 
