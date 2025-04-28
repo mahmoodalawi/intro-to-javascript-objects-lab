@@ -95,6 +95,17 @@ game.catchPokemon = function (pokemonObj) {
 game.catchPokemon(pokemon[44 - 1]);
 console.log(game.party[game.party.length - 1]);
 
+// Exercise 11
+
+
+game.catchPokemon = function (pokemonObj) {
+    game.party.push(pokemonObj);
+    game.items[1].quantity = game.items[1].quantity - 1;
+    console.log(
+        `Pokemone caught! current amount of pokeballs in inventory: ${game.items[1].quantity}`
+    );
+};
+game.catchPokemon(pokemon[100 - 1]);
 
 
 
