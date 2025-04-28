@@ -35,7 +35,6 @@ const game = {
 
    // Exercise 4
 
-
    let pokemonNum = 25;
    if (pokemon[pokemonNum - 1].starter === true) {
        const starterPokemon = pokemon[pokemonNum - 1];
@@ -44,10 +43,7 @@ const game = {
    } else {
        console.log("Pokemon is not starter");
    }
-   
 
-
-  game.party.push(starterPokemon);
 
 // Exercise 5
 
@@ -135,3 +131,17 @@ game.gymStatus = function () {
     console.log(gymTally);
 };
 game.gymStatus();
+
+// Exercise 14
+
+
+game.partyCount = function () {
+    let pokemonSum = 0;
+    game.party.forEach((partyObj, i) => {
+        pokemonSum++;
+    });
+    console.log(pokemonSum);
+};
+game.partyCount();
+console.log(game.party);
+
