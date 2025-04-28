@@ -87,3 +87,15 @@ pokemon.forEach((pokemonObj) => {
     }
 });
 
+// Exercise 10
+
+game.catchPokemon = function (pokemonObj) {
+    game.party.push(pokemonObj);
+};
+game.catchPokemon(pokemon[44 - 1]);
+console.log(game.party[game.party.length - 1]);
+
+
+
+
+
