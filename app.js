@@ -145,3 +145,13 @@ game.partyCount = function () {
 game.partyCount();
 console.log(game.party);
 
+
+
+// Exercise 15
+
+game.gyms.forEach((gym, i) => {
+    if (gym.difficulty < 8) {
+        gym.completed = true;
+    }
+});
+console.log(game.gyms);
