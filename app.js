@@ -108,5 +108,11 @@ game.catchPokemon = function (pokemonObj) {
 game.catchPokemon(pokemon[100 - 1]);
 
 
+// Exercise 11
 
-
+game.gyms.forEach((gym, i) => {
+    if (gym.difficulty < 6) {
+        gym.completed = true;
+    }
+});
+console.log(game.gyms);
