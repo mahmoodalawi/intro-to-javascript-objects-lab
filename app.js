@@ -48,3 +48,13 @@ const waterTypePokemon = pokemon.find(pokemon => pokemon.type === 'water');
 
 
 game.party.push(grassTypePokemon, fireTypePokemon, waterTypePokemon);
+
+
+// Exercise 6
+game.gyms.forEach(gym => {
+   
+    if (gym.difficulty < 3) {
+      
+      gym.completed = true;
+    }
+  });
