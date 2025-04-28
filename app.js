@@ -31,30 +31,47 @@ const game = {
  // Exercise 3
 
   game.difficulty = "Med";
+  console.log(game.difficulty);
 
    // Exercise 4
 
 
-  const starterPokemon = pokemon.find(pokemon => pokemon.starter === true);
+   let pokemonNum = 25;
+   if (pokemon[pokemonNum - 1].starter === true) {
+       const starterPokemon = pokemon[pokemonNum - 1];
+       game.party.push(starterPokemon);
+       console.log("pokemon is starter", starterPokemon);
+   } else {
+       console.log("Pokemon is not starter");
+   }
+   
 
 
   game.party.push(starterPokemon);
 
 // Exercise 5
 
-const grassTypePokemon = pokemon.find(pokemon => pokemon.type === 'grass');
-const fireTypePokemon = pokemon.find(pokemon => pokemon.type === 'fire');
-const waterTypePokemon = pokemon.find(pokemon => pokemon.type === 'water');
+
+game.party.push(pokemon[6 - 1]);
+game.party.push(pokemon[9 - 1]);
+game.party.push(pokemon[39 - 1]);
+
+console.log(game.party);
 
 
-game.party.push(grassTypePokemon, fireTypePokemon, waterTypePokemon);
+
 
 
 // Exercise 6
-game.gyms.forEach(gym => {
-   
+  game.gyms.forEach((gym, i) => {
     if (gym.difficulty < 3) {
-      
-      gym.completed = true;
+        gym.completed = true;
     }
-  });
+});
+console.log(game.gyms);
+
+
+// Exercise 7
+game.party.splice(0, 1, pokemon[26 - 1]);
+console.log(game.party);
+
