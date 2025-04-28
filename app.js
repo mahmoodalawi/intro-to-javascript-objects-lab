@@ -108,7 +108,7 @@ game.catchPokemon = function (pokemonObj) {
 game.catchPokemon(pokemon[100 - 1]);
 
 
-// Exercise 11
+// Exercise 12
 
 game.gyms.forEach((gym, i) => {
     if (gym.difficulty < 6) {
@@ -116,3 +116,22 @@ game.gyms.forEach((gym, i) => {
     }
 });
 console.log(game.gyms);
+
+
+// Exercise 13
+
+game.gymStatus = function () {
+    const gymTally = {
+        completed: 0,
+        incomplete: 0,
+    };
+    game.gyms.forEach((gymObj, i) => {
+        if (gymObj.completed === true) {
+            gymTally.completed++;
+        } else {
+            gymTally.incomplete++;
+        }
+    });
+    console.log(gymTally);
+};
+game.gymStatus();
