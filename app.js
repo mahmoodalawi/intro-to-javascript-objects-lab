@@ -154,4 +154,6 @@ game.gyms.forEach((gym, i) => {
         gym.completed = true;
     }
 });
+
+//  Exercise 16
 console.log(game.gyms);
