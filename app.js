@@ -147,7 +147,7 @@ console.log(game.party);
 
 
 
-// Exercise 15
+//  Exercise 15
 
 game.gyms.forEach((gym, i) => {
     if (gym.difficulty < 8) {
