@@ -32,3 +32,11 @@ const game = {
 
   game.difficulty = "Med";
 
+   // Exercise 4
+
+
+  const starterPokemon = pokemon.find(pokemon => pokemon.starter === true);
+
+
+  game.party.push(starterPokemon);
+
