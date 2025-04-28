@@ -40,3 +40,11 @@ const game = {
 
   game.party.push(starterPokemon);
 
+// Exercise 5
+
+const grassTypePokemon = pokemon.find(pokemon => pokemon.type === 'grass');
+const fireTypePokemon = pokemon.find(pokemon => pokemon.type === 'fire');
+const waterTypePokemon = pokemon.find(pokemon => pokemon.type === 'water');
+
+
+game.party.push(grassTypePokemon, fireTypePokemon, waterTypePokemon);
